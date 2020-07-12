@@ -9,50 +9,76 @@ import About from './components/About';
 import Footer from './components/Footer';
 // * * * * ROUTER ELEMENTS END
 import useOnClickOutside from './components/useOnClickOutside';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [ isMenuOpen, setIsMenuOpen ] = useState(false);
   const ref = React.useRef();
-  const sliding = isMenuOpen ? 'sliding' : null;
+  // const sliding = isMenuOpen ? 'sliding' : null;
   const open = isMenuOpen ? 'open' : null;
+  const closed = !isMenuOpen ? 'closed' : null;
 
   const openMenu = () => {
-    // setIsMenuOpen(!isMenuOpen);
-    console.log('click');
+    setIsMenuOpen(!isMenuOpen);
+    console.log('open', isMenuOpen);
   };
 
-  useOnClickOutside(ref, openMenu);
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    console.log('close', isMenuOpen);
+  };
+
+
+  useOnClickOutside(ref, closeMenu);
 
   // const handleClick = () => {
     
   // };
 
+    let hamburger = (<FontAwesomeIcon icon={faBars} size="1x" />);
+    let closedMenu = (<FontAwesomeIcon icon={faTimes} size="1x" />);
+    const menu = isMenuOpen ? closedMenu : hamburger ;
   
-
-
-  
-
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Fragment>
         <nav>
-          <div className='wrapper'>
-            <div className='navBar'>
-              <img className='mainLogo' ref={ref} src={logo} alt='logo' />
-              <ul className={`testUl ${sliding}`}>
+          <div className={`slidingNav ${open}`}>
+          <ul className='testUl'>
                 <li>
                   <Link to='/'>Home</Link>
                 </li>
                 <li>
                 <Link to='/about'>About</Link>
-                  {/* <a href='/about'>About</a> */}
+                  {/* <a href='/home/props.aboutId'>About</a> */}
                   {/* <Link to="/#aboutId">About</Link> */}
                 </li>
                 <li>
                   <Link to='/contact'>Contact</Link>
                 </li>
               </ul>
+          </div>
+          <div className='wrapper'>
+            <div className='navBar'>
+              <img className='mainLogo' src={logo} alt='logo' />
+              <span className='menuIcon' ref={ref} onClick={openMenu}>{menu}</span>
+              {/* <ul className='testUl'>
+                <li>
+                  <Link to='/'>Home</Link>
+                </li>
+                <li>
+                <Link to='/about'>About</Link> */}
+                  {/* <a href='/about'>About</a> */}
+                  {/* <Link to="/#aboutId">About</Link> */}
+                {/* </li>
+                <li>
+                  <Link to='/contact'>Contact</Link>
+                </li>
+                <li ref={ref} onClick={openMenu}>{hamburger}</li> */}
+              {/* </ul> */}
             </div>
             </div>
           </nav>

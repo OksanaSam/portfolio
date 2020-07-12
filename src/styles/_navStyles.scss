@@ -6,8 +6,13 @@
     height: 5vh;
     justify-content: space-between;
     align-items: center;
+        .menuIcon {
+            z-index: 100;
+            font-size: 2.5rem;
+        }
         .mainLogo {
             width: 5rem;
+            z-index: 100;
             &:hover,
             &:focus {
                 filter: drop-shadow(1.6rem 1.6rem 2rem gray);
@@ -28,4 +33,56 @@
                     }
                 }
             }
+}
+
+.navBar.open {
+    background-color: #fff;
+}
+
+
+
+.slidingNav {
+    visibility: hidden;
+    display: flex;
+    background-color: #fff;
+    top: 0;
+    width: 100vw;
+    height: calc(5vh + 4rem);
+    position: absolute;
+    justify-content: flex-end;
+    align-items: center;
+    transition: ease;
+    @media(max-width: 480px) {
+        justify-content: center;
+    }
+    ul {
+        padding: 2rem 10vw 2rem 0;
+        display: flex;
+        justify-content: flex-end;
+        @media(max-width: 480px) {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            justify-content: space-between;
+        }
+            a {
+                text-transform: uppercase;
+                padding: 0.5rem 1rem;
+                &:hover,
+                &:focus {
+                    position: relative;
+                    border-bottom: 0.25rem solid white;
+                    filter: drop-shadow(1.6rem 1.6rem 2rem gray);
+                }
+            }
+        }
+
+}
+
+.slidingNav.open {
+    visibility: visible;
+    z-index: 100;
+    @media(max-width: 480px) {
+        height: 100vh;
+    }
 }

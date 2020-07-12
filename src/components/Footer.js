@@ -6,8 +6,14 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { animateScroll as scroll } from 'react-scroll';
 import logo from '../Logo_Oksana_white.svg';
+
+
+
+{/* <i class="fas fa-arrow-circle-up"></i> */}
 
 function Footer() {
     let github = <FontAwesomeIcon icon={faGithub} size='1x' />;
@@ -16,6 +22,12 @@ function Footer() {
     let linkedinIcon = <FontAwesomeIcon icon={faLinkedin} size='1x' />;
     let twitterIcon = <FontAwesomeIcon icon={faTwitter} size='1x' />;
     let calendarIcon = <FontAwesomeIcon icon={faCalendarAlt} size='1x' />;
+    let reactIcon = <FontAwesomeIcon icon={faReact} size='1x' />;
+    let arrowIcon = <FontAwesomeIcon icon={faArrowCircleUp} size='1x' />;
+
+
+
+
     
     const scrollToTop = () => {
         scroll.scrollToTop();
@@ -27,7 +39,9 @@ function Footer() {
         <footer>
             <div className='wrapper'>
                 <div className='footerFlex'>
-                    <img className='mainLogo' src={logo} alt='logo' onClick={scrollToTop}/>
+                    {/* <img className='mainLogo' src={logo} alt='logo' onClick={scrollToTop}/> */}
+                    <div onClick={scrollToTop}>{arrowIcon}</div>
+                    
                     <ul className='socialIcons'>
                         <li><a href='https://github.com/OksanaSam' target='_blank' rel='noopener noreferrer' aria-label="GitHub account">{github}</a></li>
                         <li><a href='https://www.linkedin.com/in/oksana-samokhvalova-6b03521b0/' target='_blank' rel='noopener noreferrer' aria-label='LinkedIn account'>{linkedinIcon}</a></li>
@@ -36,7 +50,8 @@ function Footer() {
                         <li><a href='https://calendly.com/oksana-samokhvalova'>{calendarIcon}<span className='sr-only'>schedule a meeting</span></a></li>
                     </ul>
                 </div>
-                <p className='copyright'>© 2020 Oksana Samokhvalova</p>
+                <p className='copyright'>© 2020 oksanadev.com <span>{reactIcon}</span></p>
+                
                 <p className='attribution'> <a href='https://www.instagram.com/alyona_demeneva/'>{instagramIcon} Sketch by Alyona Demeneva</a></p>
             </div>
         </footer>

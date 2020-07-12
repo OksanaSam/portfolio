@@ -28,13 +28,13 @@ footer {
     display: flex;
     li {
         a {
-            color: white;
+            color: black;
             padding: 1.2rem;
             transition: .5s ease;
             font-size: 2rem;
             &:hover,
             &:focus {
-                color: black;
+                color: gray;
                 transition: .5s ease;
                 filter: drop-shadow(1.6rem 1.6rem 2rem gray);
             }

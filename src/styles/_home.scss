@@ -39,9 +39,23 @@
 .text {
     font-family: $bodyFont;
     font-size: 2.5rem;
+        p {
+            padding-top: 1rem;
+        }
     .firstLine {
         font-family: $headingFont;
+        font-weight: 700;
         font-size: 3rem;
+        position: relative;
+        &:after {
+            content: '________________';
+            top: 7px;
+            left: 0;
+            width: 20px;
+            position: absolute;
+            height: 2px;
+            color: black;
+        }
     }
 }
 
@@ -70,7 +84,8 @@
 
 // Simple Section Styles
 .simple {
-    background-color: #FAF8F2;
+    // background-color: #FAF8F2;
+    background-color: #F5F5F5;
     height: 30vh;
     @include flex(row nowrap, center, center);
     text-align: center;
@@ -87,15 +102,16 @@
 // About Section Styles
 .aboutMe {
     height: 50vh;
-    background-color: #D0CECD;
+    // background-color: #D0CECD;
     @include flex(row nowrap, auto, auto);
         p {
             padding: 0.5rem 0;
         }
-        h3 {
-            font-size: 4rem;
-            font-family: $letteringFont;
-            color: white;
+        h2 {
+            // font-size: 4rem;
+            // font-family: $letteringFont;
+            font-family: $headingFont;
+            // color: white;
         }
         .aboutMeText {
             width: 50%;
@@ -117,6 +133,7 @@
         h2 {
             text-align: center;
             padding-bottom: 2rem;
+            font-family: $headingFont;
         }
 }
 
@@ -125,18 +142,28 @@
         li {
             width: 33%;
             padding: 0.5rem;
-            text-transform: capitalize;
         }
 }
 
+
 // Projects Section Styles
+
+
+.projects {
+    background-color: #F5F5F5;
+        h2 {
+            text-align: center;
+            font-family: $headingFont;
+        }
+}
 .project {   
-    background-color: #FDF6EC;
+    // background-color: #FDF6EC;
+    background-color: #FDEEED;    
 }
 
 
 .desktopView {
-    background-color: #D1CECD;
+    background-color: #F5F5F5;
     height: fit-content;
     @include flex(row nowrap, center, center);
     padding-left: 3.5%;
@@ -151,7 +178,8 @@
 
 .projectDisplay {
     @include flex(row nowrap, space-between, center);
-    background-color: #FDF6EC;
+    // background-color: #FDF6EC;
+    background-color: #F5F5F5;   
     height: 50vh;
         @media(max-width: 768px) {
             @include flex(column nowrap, space-between, center);
@@ -199,6 +227,7 @@
         }
         h3 {
             padding-bottom: 0.5rem;
+            font-family: $headingFont;
         }
         a {
             background-color: #F5F5F5;
@@ -213,6 +242,7 @@
 
 
 .mobileView {
+    background-color: #F5F5F5;
     width: 50%;
     @include flex(row nowrap, center, center);
     max-height: 50vh;
