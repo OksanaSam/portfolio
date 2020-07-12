@@ -1,0 +1,31 @@
+.navBar {
+    position: absolute;
+    display: flex;
+    top: 2rem;
+    width: 90%;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+        .mainLogo {
+            width: 5rem;
+            &:hover,
+            &:focus {
+                filter: drop-shadow(1.6rem 1.6rem 2rem gray);
+                    cursor: pointer;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+                a {
+                    text-transform: uppercase;
+                    padding: 0.5rem 1rem;
+                    &:hover,
+                    &:focus {
+                        position: relative;
+                        border-bottom: 0.25rem solid white;
+                        filter: drop-shadow(1.6rem 1.6rem 2rem gray);
+                    }
+                }
+            }
+}

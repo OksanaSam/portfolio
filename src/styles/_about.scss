@@ -1,0 +1,33 @@
+.navAbout {
+    height: calc(5vh + 2rem);
+    width: 100vw;
+    background-color: #FDEEED;
+}
+
+.aboutLong {
+    height: 88vh;
+    background-color: #FAF8F2;
+        .aboutContent {
+            @include flex(row nowrap, center, center);
+            height: calc(88vh - 5vh - 2rem);
+                @media(max-width: 768px) {
+                    @include flex(column nowrap, space-between, center);
+                }
+                .myStory {
+                    width: 50%;
+                    padding: 2rem;
+                    line-height: 3rem;
+                    @media(max-width: 768px) {
+                        width: 100%;
+                    }
+                }
+                .aboutPhoto {
+                    width: 50%;
+                    @media(max-width: 768px) {
+                        width: 100%;
+                    }
+                }
+        }        
+}
+
+
