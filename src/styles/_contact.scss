@@ -1,48 +1,23 @@
-.ParallaxVideo { 
-    padding-bottom: 50vh;
-    padding-top: 50vh; 
-        video { 
-            min-width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: -999;
-        }
+.contactSection {
+    background-color: #F8F7F6;
+    // height: 50vh;
+    min-height: fit-content;
+    h3 {
+        font-family: $headingFont;
+    }
+    padding: 3rem 0;
 }
-
-
-.map {
-    height: 100vh;
-    width: 100vw;
-    z-index: 100;
-    position: relative;
-    bottom: 0;
-    right: 0;
-    margin-bottom: -4px;
-    padding: 0;
-}
-
-.ParallaxVideo h2 {
-    color: #fff;
-    font-family: $headingFont;
-    // font-family: $bodyFont;
-    position: absolute; 
-    bottom: 2rem; 
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-}
-
-
-input[type=submit] {
-    background-color: #FDEEED;
-    border: none;
-}
-
 
 .formSection {
-    @include flex(row nowrap, auto, auto);
-    background: none repeat scroll 0 0 #F8F7F6;
-    height: 50vh;
+    @include flex(column nowrap, center, center);
+    background: #F8F7F6;
+    // height: inherit;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                0 2px 2px rgba(0,0,0,0.11), 
+                0 4px 4px rgba(0,0,0,0.11), 
+                0 8px 8px rgba(0,0,0,0.11), 
+                0 16px 16px rgba(0,0,0,0.11), 
+                0 32px 32px rgba(0,0,0,0.11);
     @media(max-width: 768px) {
         @include flex(column nowrap, center, center);
         height: fit-content;
@@ -51,50 +26,23 @@ input[type=submit] {
 }
 
 
-.contact {
-    font-family: 'Open Sans', sans-serif;
-    @include flex(column nowrap, center, auto);
-    width: 50vw;
-}
-
 form {
     @include flex(column nowrap, center, auto);
-    width: 50vw;
-}
-
-
-.card {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #FDEEED;
-    height: 70%;
-    text-align: center;
-    padding: 2rem;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-        0 2px 2px rgba(0,0,0,0.11), 
-        0 4px 4px rgba(0,0,0,0.11), 
-        0 8px 8px rgba(0,0,0,0.11), 
-        0 16px 16px rgba(0,0,0,0.11), 
-        0 32px 32px rgba(0,0,0,0.11);
-        @media(max-width: 768px) {
-            width: 100%;
-            margin-bottom: 2rem;
+    width: 70vw;
+        input[type=submit] {
+            background-color: #FDEEED;
+            border: none;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                        0 2px 2px rgba(0,0,0,0.11), 
+                        0 4px 4px rgba(0,0,0,0.11), 
+                        0 8px 8px rgba(0,0,0,0.11), 
+                        0 16px 16px rgba(0,0,0,0.11), 
+                        0 32px 32px rgba(0,0,0,0.11);
+            width: 50%;
+            margin: 0 auto;
+            height: 3rem;
         }
-}
-
-
-input[type=submit] {
-    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-        0 2px 2px rgba(0,0,0,0.11), 
-        0 4px 4px rgba(0,0,0,0.11), 
-        0 8px 8px rgba(0,0,0,0.11), 
-        0 16px 16px rgba(0,0,0,0.11), 
-        0 32px 32px rgba(0,0,0,0.11);
-    width: 50%;
-    margin: 0 auto;
-    height: 3rem;
-}
-
-textarea {
-    margin-top: 1.5rem;
+        textarea {
+            margin-top: 1.5rem;
+        }
 }
