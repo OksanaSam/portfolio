@@ -1,11 +1,21 @@
 import React, { Fragment, useState, useRef } from 'react';
+import { HashLink as newLink } from 'react-router-hash-link';
 import './App.scss';
-import logo from './Logo_Oksana.svg';
+import logo from './Logo_SVG_Favicon.svg';
+
 // * * * * ROUTER ELEMENTS
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
-import Home from './components/Home';
-import Contact from './components/Contact';
-import About from './components/About';
+// import Home from './components/Home';
+
+import Hero from './components/Hero';
+import Simple from './components/Simple';
+import AboutSection from './components/AboutSection';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+
+import ContactSection from './components/ContactSection';
+// import Contact from './components/Contact';
+// import About from './components/About';
 import Footer from './components/Footer';
 // * * * * ROUTER ELEMENTS END
 import useOnClickOutside from './components/useOnClickOutside';
@@ -22,12 +32,12 @@ function App() {
 
   const openMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log('open', isMenuOpen);
+    // console.log('open', isMenuOpen);
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-    console.log('close', isMenuOpen);
+    // console.log('close', isMenuOpen);
   };
 
 
@@ -43,21 +53,24 @@ function App() {
   
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
       <Fragment>
         <nav>
           <div className={`slidingNav ${open}`}>
           <ul className='testUl'>
                 <li>
-                  <Link to='/'>Home</Link>
+                  <a href='/'>Home</a>
+                  {/* <Link to='/'>Home</Link> */}
                 </li>
                 <li>
-                <Link to='/about'>About</Link>
-                  {/* <a href='/home/props.aboutId'>About</a> */}
+                {/* <Link to='/home#aboutId'>About</Link> */}
+
+                
+                  <a href='/home#about'>About</a>
                   {/* <Link to="/#aboutId">About</Link> */}
                 </li>
                 <li>
-                  <Link to='/contact'>Contact</Link>
+                  <a href='/ContactSection#contact'>Contact</a>
+                  {/* <Link to='/contact'>Contact</Link> */}
                 </li>
               </ul>
           </div>
@@ -83,13 +96,19 @@ function App() {
             </div>
           </nav>
           <main>
-            <Route exact path="/" component={Home} /> 
+            {/* <Home/> */}
+            <Hero />
+            <Simple />
+            <AboutSection />
+            <Skills />
+            <Projects />
+            {/* <Route exact path="/" component={Home} /> 
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="/about" component={About}/>
+            <Route exact path="/home#abouId" component={Home}/> */}
+            <ContactSection/>
           </main>
         <Footer/>
       </Fragment>
-    </Router>
   );
 }
 

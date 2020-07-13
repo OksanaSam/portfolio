@@ -17,6 +17,10 @@ footer {
         }
         .footerFlex {
             @include flex(row nowrap, space-between, center);
+
+            span {
+                font-size: 2rem;
+            }
         }
         a {
             font-size: 1.4rem;
@@ -34,12 +38,15 @@ footer {
             font-size: 2rem;
             &:hover,
             &:focus {
+                transform: scale(1.2);
                 color: gray;
-                transition: .5s ease;
+                // transition: .5s ease;
                 filter: drop-shadow(1.6rem 1.6rem 2rem gray);
             }
         }
     }
 }
+
+
 
 

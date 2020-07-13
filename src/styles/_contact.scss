@@ -34,14 +34,14 @@
 
 
 input[type=submit] {
-    background-color: #FDEEED;;
+    background-color: #FDEEED;
     border: none;
 }
 
 
 .formSection {
     @include flex(row nowrap, auto, auto);
-    background: none repeat scroll 0 0 #FAF8F2;
+    background: none repeat scroll 0 0 #F8F7F6;
     height: 50vh;
     @media(max-width: 768px) {
         @include flex(column nowrap, center, center);

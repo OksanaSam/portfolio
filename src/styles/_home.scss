@@ -9,9 +9,6 @@
     }
 }
 
-
-
-
 .heroText {
     height: inherit;
     @include flex(row nowrap, space-between, center);
@@ -104,6 +101,12 @@
     height: 50vh;
     // background-color: #D0CECD;
     @include flex(row nowrap, auto, auto);
+        @media(max-width: 768px) {
+            @include flex(column nowrap, auto, auto);
+            height: fit-content;
+            width: 100%;
+            order: 2;
+        }
         p {
             padding: 0.5rem 0;
         }
@@ -116,18 +119,29 @@
         .aboutMeText {
             width: 50%;
             padding: 3rem 5% 3rem 3rem;
+            @media(max-width: 768px) {
+                width: 100%;
+                order: 1;
+            }
         }
         .myPhoto {
+            height: 50vh;
             width: 50%;
             background-image: url('./augustine-wong-T0BYurbDK_M-unsplash.jpg');
             background-repeat: no-repeat;
             background-size: cover;
+            @media(max-width: 768px) {
+                width: 100%;
+                order: 2;
+            }
+
         }
 }
 
 // Skills Section Styles
 .skills {
-    background-color: #F5F5F5;
+    // background-color: #FAF8F2;
+    background-color: #FDEEED;
     padding: 3rem 0;
     @include flex(column nowrap, center, center);
         h2 {
@@ -151,68 +165,103 @@
 
 .projects {
     background-color: #F5F5F5;
+    padding: 3rem 0;
         h2 {
             text-align: center;
             font-family: $headingFont;
+            // padding-bottom: 2rem;
         }
 }
-.project {   
-    // background-color: #FDF6EC;
-    background-color: #FDEEED;    
-}
+
 
 
 .desktopView {
-    background-color: #F5F5F5;
-    height: fit-content;
+    background-color: #FDEEED;
+    // height: fit-content;
     @include flex(row nowrap, center, center);
     padding-left: 3.5%;
     padding-top: 2rem;
-    height: 50vh;
-    max-height: 50vh;
+    // height: 50vh;
+    // max-height: 50vh;
     img {
-        object-fit: contain;
-        align-self: stretch;
+        // object-fit: contain;
+        // align-self: stretch;
     }
 }
 
+
+.slider {
+    width: 50%;
+    // height: inherit;
+    background-color: #FDEEED;   
+    @media(max-width: 768px) {
+        @include flex(column nowrap, space-between, center);
+        height: fit-content;
+        width: 100%;
+        order: 2;
+    }
+
+}
+
+.mobileView {
+    background-color: #FDEEED;
+    width: 100%;
+    align-self: stretch;
+    @include flex(row nowrap, center, center);
+    min-height: fit-content;
+    padding-top: 2rem;
+        img {
+            object-fit: contain;
+            align-self: stretch;
+        }
+}
+
 .projectDisplay {
+    margin-top: 2rem;
+    width: 100%;
+    // padding: 3rem 0;
     @include flex(row nowrap, space-between, center);
     // background-color: #FDF6EC;
-    background-color: #F5F5F5;   
-    height: 50vh;
+    background-color: #FDEEED;
+    // height: 50vh;
+    height: fit-content;
         @media(max-width: 768px) {
             @include flex(column nowrap, space-between, center);
             height: fit-content;
         }
 }
 
+
+
 .projectDescription {
     width: 50%;
     height: 50vh;
     max-height: 50vh;
+    background-color: #FDEEED;
+    padding: 1.9rem;
     @include flex(row nowrap, center, center);
         @media(max-width: 768px) {
             width: 100%;
             height: 43vh;
+            order: 1;
         }
         .projectCard {
-            box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-                0 2px 2px rgba(0,0,0,0.11), 
-                0 4px 4px rgba(0,0,0,0.11), 
-                0 8px 8px rgba(0,0,0,0.11), 
-                0 16px 16px rgba(0,0,0,0.11), 
-                0 32px 32px rgba(0,0,0,0.11);
-            background-color: white;
-            height: 85%;
-            padding: 1.9rem;
-                @media(max-width: 900px) {
-                    height: 90%;
-                }
-                @media(max-width: 768px) {
-                    width: 85%;
-                    font-size: 1.3rem;
-                }
+            // box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+            //     0 2px 2px rgba(0,0,0,0.11), 
+            //     0 4px 4px rgba(0,0,0,0.11), 
+            //     0 8px 8px rgba(0,0,0,0.11), 
+            //     0 16px 16px rgba(0,0,0,0.11), 
+            //     0 32px 32px rgba(0,0,0,0.11);
+            // background-color: white;
+            // height: 85%;
+            // padding: 1.9rem;
+            //     @media(max-width: 900px) {
+            //         height: 90%;
+            //     }
+            //     @media(max-width: 768px) {
+            //         width: 85%;
+            //         font-size: 1.3rem;
+            //     }
         }
         button {
             margin: 0.5rem 0.5rem 0 0;
@@ -241,17 +290,3 @@
 }
 
 
-.mobileView {
-    background-color: #F5F5F5;
-    width: 50%;
-    @include flex(row nowrap, center, center);
-    max-height: 50vh;
-    padding-top: 2rem;
-        img {
-            object-fit: contain;
-            align-self: stretch;
-        }
-        @media(max-width: 768px) {
-            width: 100%;
-        }
-}
