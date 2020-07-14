@@ -1,33 +1,38 @@
-.navAbout {
-    height: calc(5vh + 2rem);
-    width: 100vw;
-    background-color: #FDEEED;
+// About Section Styles
+.aboutMe {
+    height: 50vh;
+    // background-color: #D0CECD;
+    @include flex(row nowrap, auto, auto);
+        @media(max-width: 768px) {
+            @include flex(column nowrap, auto, auto);
+            height: fit-content;
+            width: 100%;
+            order: 2;
+        }
+        p {
+            padding: 0.5rem 0;
+        }
+        h2 {
+            font-family: $headingFont;
+        }
+        .aboutMeText {
+            width: 50%;
+            padding: 3rem 5% 3rem 3rem;
+            @media(max-width: 768px) {
+                width: 100%;
+                order: 1;
+            }
+        }
+        .myPhoto {
+            height: 50vh;
+            width: 50%;
+            background-image: url('./augustine-wong-T0BYurbDK_M-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width: 768px) {
+                width: 100%;
+                order: 2;
+            }
+
+        }
 }
-
-.aboutLong {
-    height: 88vh;
-    background-color: #FAF8F2;
-        .aboutContent {
-            @include flex(row nowrap, center, center);
-            height: calc(88vh - 5vh - 2rem);
-                @media(max-width: 768px) {
-                    @include flex(column nowrap, space-between, center);
-                }
-                .myStory {
-                    width: 50%;
-                    padding: 2rem;
-                    line-height: 3rem;
-                    @media(max-width: 768px) {
-                        width: 100%;
-                    }
-                }
-                .aboutPhoto {
-                    width: 50%;
-                    @media(max-width: 768px) {
-                        width: 100%;
-                    }
-                }
-        }        
-}
-
-

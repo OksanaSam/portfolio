@@ -8,7 +8,7 @@ function ContactSection() {
                     <div className='formSection'>
                         <h3>let's get in touch</h3>
                             <p>Interested in working together or chatting about coding? </p>
-                            <p>You can just email at sayhi@oksanadev.com. Or, if you prefer it the old-fashioned way, fill out the form!</p>
+                            <p>You can just email me at sayhi@oksanadev.com. Or, if you prefer it the old-fashioned way, fill out the form!</p>
                         <form action='https://getform.io/f/27e13fbd-6704-422a-a101-c0e11e96aab1' method='POST' >
                             <label htmlFor='name'>name *</label>
                             <input

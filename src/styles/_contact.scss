@@ -10,7 +10,7 @@
 
 .formSection {
     @include flex(column nowrap, center, center);
-    background: #F8F7F6;
+    background: white;
     // height: inherit;
     box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
                 0 2px 2px rgba(0,0,0,0.11), 
@@ -32,6 +32,8 @@ form {
         input[type=submit] {
             background-color: #FDEEED;
             border: none;
+            font-family: $bodyFont;
+            text-transform: uppercase;
             box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
                         0 2px 2px rgba(0,0,0,0.11), 
                         0 4px 4px rgba(0,0,0,0.11), 
