@@ -1,50 +1,73 @@
 .contactSection {
-    background-color: #F8F7F6;
-    // height: 50vh;
+    background-color: #F5F5F5;
+    font-size: 1.8rem;
     min-height: fit-content;
-    h3 {
-        font-family: $headingFont;
+    text-align: center;
+    @media(max-width: 768px) {
+        text-align: left;
     }
-    padding: 3rem 0;
+    h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        padding-bottom: 0.7rem;
+    }
+    padding: 4rem 0;
 }
 
 .formSection {
-    @include flex(column nowrap, center, center);
-    background: white;
-    // height: inherit;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-                0 2px 2px rgba(0,0,0,0.11), 
-                0 4px 4px rgba(0,0,0,0.11), 
-                0 8px 8px rgba(0,0,0,0.11), 
-                0 16px 16px rgba(0,0,0,0.11), 
-                0 32px 32px rgba(0,0,0,0.11);
+    width: 60%;
+    margin: 0 auto;
+        p {
+            padding: 0.5rem 1rem;
+    };
     @media(max-width: 768px) {
-        @include flex(column nowrap, center, center);
-        height: fit-content;
-        padding: 2rem;
+        width: 100%;
     }
 }
 
 
 form {
+    text-align: left;
     @include flex(column nowrap, center, auto);
-    width: 70vw;
-        input[type=submit] {
-            background-color: #FDEEED;
+        input,
+        textarea {
+            border-radius: 0.5rem;
             border: none;
-            font-family: $bodyFont;
-            text-transform: uppercase;
-            box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-                        0 2px 2px rgba(0,0,0,0.11), 
-                        0 4px 4px rgba(0,0,0,0.11), 
-                        0 8px 8px rgba(0,0,0,0.11), 
-                        0 16px 16px rgba(0,0,0,0.11), 
-                        0 32px 32px rgba(0,0,0,0.11);
-            width: 50%;
-            margin: 0 auto;
-            height: 3rem;
+            padding: 1rem;
         }
+        label {
+            padding: 1rem;
+        }
+
+        input[type=submit] {
+            color: #FDEEED;
+            width: 40%;
+            font-family: $bodyFont;
+            font-weight: bold;
+            margin: 0 auto;
+            margin-top: 1rem;
+            font-size: 2rem;
+            background-color: black;
+            text-transform: uppercase;
+            transition: .5s ease;
+            &:hover,
+            &:focus {
+                box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                            0 2px 2px rgba(26, 20, 20, 0.11), 
+                            0 4px 4px rgba(0,0,0,0.11), 
+                            0 8px 8px rgba(0,0,0,0.11), 
+                            0 16px 16px rgba(0,0,0,0.11), 
+                            0 32px 32px rgba(0,0,0,0.11);
+            }
+                @media(max-width: 768px) {
+                    width: 100%;
+                }
+    }
         textarea {
             margin-top: 1.5rem;
+            resize: none;
+            &::placeholder {
+                font-family: $bodyFont;
+            }
         }
 }

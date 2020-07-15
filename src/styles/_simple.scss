@@ -1,0 +1,13 @@
+// Simple Section Styles
+.simple {
+    background-color: #F5F5F5;
+    height: 30vh;
+    @include flex(row nowrap, center, center);
+    text-align: center;
+        p::before {
+            content: open-quote;
+        }
+        p::after {
+            content: close-quote;
+        }
+}

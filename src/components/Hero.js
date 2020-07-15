@@ -13,7 +13,7 @@ function Hero(){
                     <div className='heroContent'>
                     <div className='heroText'>
                         <div className='text'>
-                        <h1 className='firstLine'>hi, i'm oksana</h1> 
+                        <h1>hi, i'm oksana</h1> 
                         <p>(n) a front-end developer</p>
                         </div>
                         <img className='sketch' src={sketch} alt='sketch'/>

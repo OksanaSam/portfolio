@@ -1,0 +1,22 @@
+// Skills Section Styles
+.skills {
+    background-color: #FDEEED;
+    // height: 40vh;
+    padding: 3rem 0;
+    @include flex(column nowrap, center, center);
+        h2 {
+            text-align: center;
+            padding-bottom: 2rem;
+            font-family: $headingFont;
+        }
+}
+
+.skillsList {
+    column-count: 3;
+        li {
+            padding: 0.5rem;
+        }
+        @media(max-width: 768px) {
+            column-count: 2;
+        }
+}

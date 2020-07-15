@@ -25,7 +25,7 @@ img {
 body {
   min-width: 320px;
   font-family: $bodyFont;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 ul {
@@ -46,6 +46,16 @@ a {
   max-width: 1600px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: $headingFont;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 button {
   text-transform: uppercase;
   border: none;
@@ -53,12 +63,6 @@ button {
   border-radius: 0.2rem;
   font-family: $headingFont;
   transition: .5s ease;
-  // box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-  //           0 2px 2px rgba(0,0,0,0.11), 
-  //           0 4px 4px rgba(0,0,0,0.11), 
-  //           0 8px 8px rgba(0,0,0,0.11), 
-  //           0 16px 16px rgba(0,0,0,0.11), 
-  //           0 32px 32px rgba(0,0,0,0.11);
           
     &:hover,
     &:focus {

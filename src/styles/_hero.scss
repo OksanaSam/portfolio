@@ -1,0 +1,80 @@
+// Hero Section Styles
+
+.hero {    
+    background: linear-gradient(-190deg, #FDEEED 90%, white 10%);
+        .heroContent {
+            padding-top: calc(5vh + 2rem);
+            height: 100vh;
+            @include flex(column nowrap, space-between, auto);
+    }
+}
+
+.heroText {
+    height: inherit;
+    @include flex(row nowrap, space-between, center);
+    align-self: stretch;
+    object-fit: contain;
+        @media(max-width: 768px) {
+            @include flex(column nowrap, space-around, center);
+        }
+        .sketch {
+            pointer-events: none;
+            user-select: none;
+            object-fit: contain;
+            width: 40%;
+            align-self: center;
+            @media(max-width: 768px) {
+                width: 60%;
+            }
+        }
+}
+
+.text {
+    font-family: $bodyFont;
+    font-size: 2.5rem;
+        p {
+            padding-top: 1rem;
+        }
+    h1 {
+        font-family: $headingFont;
+        font-weight: 700;
+        font-size: 3rem;
+        position: relative;
+        &:after {
+            content: '________________';
+            top: 7px;
+            left: 0;
+            width: 20px;
+            position: absolute;
+            height: 2px;
+            color: black;
+        }
+    }
+}
+
+.downButton {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    z-index: 200;
+    @media(max-width: 670px) {
+        color: black;
+    }
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0rem);
+	}
+	50% {
+		transform: translatey(-1rem);
+	}
+	100% {
+		transform: translatey(0rem);
+	}
+}

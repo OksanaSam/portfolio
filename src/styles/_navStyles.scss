@@ -1,38 +1,18 @@
 .navBar {
-    position: absolute;
-    display: flex;
-    top: 2rem;
     width: 90%;
     height: 5vh;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row nowrap, space-between, center);
+    position: absolute;
+    top: 2rem;
         .menuIcon {
             z-index: 100;
             font-size: 2.5rem;
+            cursor: pointer;
         }
         .mainLogo {
             width: 5rem;
             z-index: 100;
-            &:hover,
-            &:focus {
-                filter: drop-shadow(1.6rem 1.6rem 2rem gray);
-                    cursor: pointer;
-            }
         }
-        ul {
-            display: flex;
-            justify-content: flex-end;
-                a {
-                    text-transform: uppercase;
-                    padding: 0.5rem 1rem;
-                    &:hover,
-                    &:focus {
-                        position: relative;
-                        border-bottom: 0.25rem solid white;
-                        filter: drop-shadow(1.6rem 1.6rem 2rem gray);
-                    }
-                }
-            }
 }
 
 .navBar.open {
@@ -40,49 +20,51 @@
 }
 
 
-
 .slidingNav {
     visibility: hidden;
-    display: flex;
+    @include flex(row nowrap, flex-end, center);
     background-color: #fff;
-    top: 0;
     width: 100vw;
     height: calc(5vh + 4rem);
     position: absolute;
-    justify-content: flex-end;
-    align-items: center;
-    transition: ease;
-    @media(max-width: 480px) {
-        justify-content: center;
+    top: 0;
+    @media(max-width: 670px) {
+        @include flex(row nowrap, center, center);
     }
-    ul {
-        padding: 2rem 10vw 2rem 0;
-        display: flex;
-        justify-content: flex-end;
-        @media(max-width: 480px) {
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
-            justify-content: space-between;
-        }
-            a {
-                text-transform: uppercase;
-                padding: 0.5rem 1rem;
-                &:hover,
-                &:focus {
-                    position: relative;
-                    border-bottom: 0.25rem solid white;
-                    filter: drop-shadow(1.6rem 1.6rem 2rem gray);
+        ul {
+            padding: 2rem 10vw 2rem 0;
+            @include flex(row nowrap, flex-end, auto);
+            @media(max-width: 670px) {
+                @include flex(column nowrap, space-between, center);
+                padding: 0;
+            }
+                a {
+                    text-transform: uppercase;
+                    padding: 0.5rem 1rem;
+                    &:hover,
+                    &:focus {
+                        position: relative;
+                        background-color: #FDEEED;
+                    }
                 }
             }
-        }
 
 }
+
+@media(max-width: 670px) {
+    .slidingNav ul li {
+        padding: 1rem 0;
+         a {
+             font-size: 2.5rem;
+         }
+    }
+}
+
 
 .slidingNav.open {
     visibility: visible;
     z-index: 100;
-    @media(max-width: 480px) {
+    @media(max-width: 670px) {
         height: 100vh;
     }
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function RandomWord(){
 
-    const funFacts = ['Korean movies', 'React', 'Iced Coconut Lattes', 'Pastel Colours', 'Minimalism', 'Virtual Traveling', 'Art History', 'Balcony Parties', 'Pilates', `You Don't Know JS`];
+    const funFacts = ['Korean Movies', 'Iced Coconut Lattes', 'White Colour', 'Petting Cats', 'Virtual Traveling', 'Balcony Parties', 'Pilates', `You Don't Know JS`];
 
     const [ randomFact, setrandomFact ] = useState();
 
@@ -18,7 +18,7 @@ function RandomWord(){
 
     return (
         <>
-            <span>Currently into: {randomFact}</span>
+            <p className='randomFact'>Currently into: <span>{randomFact}</span></p>
         </>
     )}
 

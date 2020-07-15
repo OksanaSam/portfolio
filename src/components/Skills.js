@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 
 function Skills(){
     return (
@@ -7,17 +7,18 @@ function Skills(){
                 <div className='wrapper'>
                     <h2>my skills</h2>
                     <ul className='skillsList'>
-                        <li>HTML5</li>
-                        <li>Javascript</li>
-                        <li>Git Collaboration</li>
-                        <li>CSS3</li>
-                        <li>React</li>
-                        <li>Web Accessibility </li>
-                        <li>SASS</li>
-                        <li>jQuery</li>
-                        <li>Responsive Web Design</li>
-                        <li>Firebase</li>
-                        <li>RESTful APIs</li>
+                        <li><p>HTML5</p></li>
+                        <li><p>CSS3</p></li>
+                        <li><p>Sass</p></li>
+                        <li><p>Firebase</p></li>
+                        <li><p>Javascript</p></li>
+                        <li><p>React</p></li>
+                        <li><p>jQuery</p></li>
+                        <li><p>RESTful APIs</p></li>
+                        <li><p>Responsive Web Design</p></li>
+                        <li><p>Web Accessibility</p></li>
+                        <li><p>Paired Programming</p></li>
+                        <li><p>Git &amp; GitHub</p></li>
                     </ul>
                 </div>
             </section>
