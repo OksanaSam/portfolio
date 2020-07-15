@@ -12,7 +12,7 @@ function About(){
         <>
            <section id='about' className='aboutMe'>
                 <div className='myPhoto'>
-                    <img src={myPhoto} alt='my photo'/>
+                    {/* <img src={myPhoto} alt='my photo'/> */}
                 </div>
                 <div className='aboutMeText'>
                     <h2>about</h2>

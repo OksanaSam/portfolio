@@ -46,7 +46,7 @@ function Projects(){
                         <div className='projectDescription'>
                                 <h3>Moody</h3>
                                 <p>A custom moodboard web application tailored to user preferences. Built on React using 2 APIs. The user can switch between color and audio themes with a toggle switch.</p>
-                                <p>React | Unsplash API | Type Fit API | react-sound | Accessible</p>
+                                <p className='toolKit'>React | Unsplash API | Type Fit API | react-sound | Accessible</p>
                                 <a className='projectLink' href='https://oksanasam.github.io/oksana-samokhvalova-project-five/' target='_blank'>Live</a>
                                <a className='projectLink' href='https://github.com/OksanaSam/oksana-samokhvalova-project-five' target='_blank'>GitHub</a>
                         </div>
@@ -64,7 +64,7 @@ function Projects(){
                         <div className='projectDescription'>
                             <h3>AirClear Canada</h3>
                             <p>A pair project built in partnership with <a href='https://thisdude.codes/#' target='_blank'>Michael Currie</a>: an interactive web app that allows a user to check the air quality in Canadian provinces and view the real time air quality and weather data.</p>
-                            <p>jQuery | MapQuest API | AirVisual API | LeafletJS | GeoJSON | Unsplash API</p>
+                            <p className='toolKit'>jQuery | MapQuest API | AirVisual API | LeafletJS | GeoJSON | Unsplash API</p>
                             <a className='projectLink' href='https://airclear.netlify.app/' target='_blank'>Live</a>
                             <a className='projectLink' href='https://github.com/OksanaAndMikeCode/AirQualityApp' target='_blank'>GitHub</a>
                         </div>
@@ -82,7 +82,7 @@ function Projects(){
                         <div className='projectDescription'>
                             <h3>Page Turners</h3>
                             <p>A group project built in partnership with <a href='http://davidjdownie.ca/'>David Downie</a>, <a href='https://www.vigyankayastha.com/' target='_blank'>Vigyan Kayastha</a> and <a href='https://www.anastasiamay.com/' target='_blank'>Anastasia May</a>: an app that allows a user to track their reading lists. The user can search books by title and author, add them to their virtual bookshelf, delete books and mark them as read/unread.</p>
-                            <p>React | Google Books API | Firebase | Sass | Accessible</p>
+                            <p className='toolKit'>React | Google Books API | Firebase | Sass | Accessible</p>
                             <a className='projectLink' href='https://dankestteamever.github.io/page-turners/' target='_blank'>Live</a>
                             <a className='projectLink' href='https://github.com/DankestTeamEver/page-turners' target='_blank'>GitHub</a>
                         </div>
