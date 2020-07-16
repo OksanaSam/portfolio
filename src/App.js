@@ -2,6 +2,12 @@ import React, { useState, useRef } from 'react';
 import './App.scss';
 import logo from './Logo_SVG_Favicon.svg';
 
+// * * * * TRANSLATIONS FEATURE
+import { TranslateProvider } from 'translate-components';
+import translations from './translations.json';
+import Translate from 'translate-components';
+import { reactTranslateChangeLanguage } from 'translate-components';
+
 // * * * * COMPONENTS
 import Hero from './components/Hero';
 import Simple from './components/Simple';
@@ -26,12 +32,13 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 function App() {
 
   AOS.init();
+
   const [ isMenuOpen, setIsMenuOpen ] = useState(false);
   const ref = useRef();
   const open = isMenuOpen ? 'open' : null;
-  const closed = !isMenuOpen ? 'closed' : null;
   const menu = isMenuOpen ? <Icon iconName={faTimes} />  : <Icon iconName={faBars} /> ;
-  
+
+
   const openMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -43,22 +50,29 @@ function App() {
   useOnClickOutside(ref, closeMenu);
 
 
+
   return (
       <>
+       <TranslateProvider translations={translations} defaultLanguage={'en'}>
+         {/* NAV BAR */}
         <nav>
           <div className={`slidingNav ${open}`}>
           <ul className='testUl'>
                 <li>
-                  <a href='/'>Home</a>
+                  <a href='/'><Translate useRawText={true}>Home</Translate></a>
                 </li>
                 <li>
-                  <a href='/#about'>About</a>
+                  <a href='/#about'><Translate useRawText={true}>About</Translate></a>
                 </li>
                 <li>
-                  <a href='/#projects'>Projects</a>
+                  <a href='/#projects'><Translate useRawText={true}>Projects</Translate></a>
                 </li>
                 <li>
-                  <a href='/#contact'>Contact</a>
+                  <a href='/#contact'><Translate useRawText={true}>Contact</Translate></a>
+                </li>
+                <li>
+                    <span className='languageButton' onClick={reactTranslateChangeLanguage.bind(this, 'ua')}>UA</span>
+                    <span className='languageButton' onClick={reactTranslateChangeLanguage.bind(this, 'en')}>EN</span>
                 </li>
               </ul>
           </div>
@@ -78,10 +92,9 @@ function App() {
             <Contact/>
           </main>
         <Footer/>
+        </TranslateProvider>
       </>
   );
 }
 
 export default App;
-
-

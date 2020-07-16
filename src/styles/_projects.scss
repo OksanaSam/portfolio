@@ -21,15 +21,10 @@
 }
 
 .desktopView {
-    // background-color: #FDEEED;
-    // height: fit-content;
     @include flex(row nowrap, center, center);
     padding-top: 2rem 0 2rem 3.5%;
-    // height: 50vh;
-    // max-height: 50vh;
     img {
         width: 80%;
-        // align-self: stretch;
     }
 }
 
@@ -67,7 +62,6 @@
 
 
 .mobileView {
-    // background-color: #F5F5F5;
     width: 100%;
     align-self: stretch;
     @include flex(row nowrap, center, center);
@@ -83,11 +77,7 @@
     margin-top: 2rem;
     width: 100%;
     padding: 5rem 0;
-    // padding: 3rem 0;
     @include flex(row nowrap, space-between, center);
-    // background-color: #FDF6EC;
-    // background-color: #F6EFE9;
-    // height: 50vh;
     height: fit-content;
         @media(max-width: 768px) {
             @include flex(column nowrap, space-between, center);
@@ -99,23 +89,25 @@
 
 .projectDescription {
     width: 50%;
-    // height: 50vh;
-    // min-height: fit-content;
-    // background-color: #FDEEED;
     padding: 2.9rem;
         p {
             padding: 0.5rem 0;
         }
-    // @include flex(column nowrap, center, center);
         @media(max-width: 768px) {
             width: 100%;
-            // height: 43vh;
             order: 1;
         }
         h3 {
             padding-bottom: 0.5rem;
             font-size: 2.5rem;
-            // font-family: $headingFont;
+        }
+        a:not(.projectLink) {
+            text-transform: uppercase;
+            transition: .5s ease;
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
         }
 }
 
@@ -140,12 +132,8 @@
     border: 0.2rem black solid;
     font-weight: bold;
     color: #FDEEED;
-   
     &:hover,
     &:focus {
-        // color: #888888;
-        // background-color: #FDEEED;
-        // border: 0.2rem #888888 solid;
         box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
                     0 2px 2px rgba(0,0,0,0.11), 
                     0 4px 4px rgba(0,0,0,0.11), 

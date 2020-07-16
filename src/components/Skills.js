@@ -1,11 +1,12 @@
 import React from 'react';
+import Translate from 'translate-components';
 
 function Skills(){
     return (
         <>
             <section className='skills'>
                 <div className='wrapper'>
-                    <h2>my skills</h2>
+                    <h2><Translate useRawText={true}>my skills</Translate></h2>
                     <ul className='skillsList'>
                         <li><p>HTML5</p></li>
                         <li><p>CSS3</p></li>

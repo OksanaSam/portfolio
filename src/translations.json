@@ -1,0 +1,92 @@
+{
+    "Home": {
+      "ua": "головна"
+    },
+    "About": {
+      "ua": "про мене"
+    },
+    "Contact": {
+      "ua": "контакти"
+    },
+    "projects": {
+      "ua": "проекти"
+    },
+    "Projects": {
+      "ua": "проекти"
+    },
+    "SIMPLE IS BETTER THAN COMPLEX": {
+      "ua": "ПРОСТЕ - КРАЩЕ, НІЖ СКЛАДНЕ"
+    },
+    "hi, i'm oksana": {
+      "ua": "привіт, я оксана"
+    },
+    "(n) a front-end developer": {
+      "ua": "(і) фронт-енд розробник"
+    },
+    "Currently into: ": {
+      "ua": "На разі захоплююсь: "
+    },
+    "A pair project built in partnership with ": {
+      "ua": "Парний проект, реалізований у партнерстві з "
+    },
+    "an interactive web app that allows a user to check the air quality in Canadian provinces and view the real time air quality and weather data.": {
+      "ua": "інтерактивний веб-додаток, який надає змогу користувачам перевіряти якість повітря в провінціях Канади та переглядати дані про погоду в реальному часі."
+    },
+    "A custom moodboard web application tailored to user preferences. Built on React using 2 APIs. The user can switch between color and audio themes with a toggle switch.": {
+      "ua": "Веб-додаток у вигляді персоналізованого мудборду, який користувач може оформити під власний настрій. Розроблено на React за допомогою 2 API. Користувач може змінювати колір та звукову тему додатку за допомогою перемикача."
+    },
+    "A group project built in partnership with ": {
+      "ua": "Груповий проект, реалізований у партнерстві з "
+    },
+    "an app that allows a user to track their reading lists. The user can search books by title and author, add them to their virtual bookshelf, delete books and mark them as read/unread.": {
+      "ua": "веб-додаток, який надає змогу користувачам створювати персоналізовані списки книжок. Користувач може шукати книги за назвою та автором, додавати їх до своєї віртуальної книжкової полиці, видаляти книги та позначати їх як прочитані/непрочитані."
+    },
+    "and": {
+      "ua": "та"
+    },
+    "about": {
+      "ua": "про мене"
+    },
+    "My name is Oksana Samokhvalova. I'm a Front-End Developer based in Toronto with a passion for web technologies, accessible digital content and clean design.": {
+      "ua": "Мене звати Оксана Самохвалова. Я фронт-енд розробник з України, зараз живу в Торонто. Захоплююсь веб-технологіями, доступним діджитал-контентом та мінімалістичним дизайном."
+    },
+    "As a recent graduate of Juno College of Technology (Web Development Immersive Bootcamp), I like building user-friendly web applications with simple UI and keeping up with the latest trends in Web Development.": {
+      "ua": "Як нещодавній випускниці Juno College of Technology, мені подобається створювати зручні для користувача веб-додатки з простим інтерфейсом та слідкувати за останніми тенденціями веб-розробки."
+    },
+    "My background is in Linguistics and Graphic Design. So, I can talk for hours about syntax and semantics, of both programming and natural languages.": {
+      "ua": "Моя перша освіта – лінгвістика та переклад. Тому я можу годинами говорити про синтаксис та семантику, як що стосується програмування, так і природніх мов. "
+    },
+    "Kinda hooked on React.": {
+      "ua": "Моя нова пристрасть - React."
+    },
+    "Please feel free to reach out via social channels below.": {
+      "ua": "Я завжди на зв'язку на цих соціальних платформах:"
+    },
+    "my skills": {
+      "ua": "що я вмію"
+    },
+    "let's get in touch": {
+      "ua": "давайте знайомитись"
+    },
+    "To connect, you can always email me at oksana@oksanadev.com.": {
+      "ua": "Щоб зв’язатися зі мною, Ви завжди можете надіслати лист на адресу oksana@oksanadev.com."
+    },
+    "Or, if you prefer it the old-fashioned way, fill out the form!": {
+      "ua": "Або ж, якщо Ви надаєте перевагу класичному способу, заповніть форму!"
+    },
+    "name *": {
+      "ua": "ім'я *"
+    },
+    "email *": {
+      "ua": "email *"
+    },
+    "Submit": {
+      "ua": "Надіслати"
+    },
+    "Sketch by Alyona Demeneva": {
+      "ua": "Ілюстрація: Альона Деменєва"
+    }
+  }
+
+  
+  

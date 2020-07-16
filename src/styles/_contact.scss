@@ -39,9 +39,11 @@ form {
             padding: 1rem;
         }
 
-        input[type=submit] {
+        button[type=submit] {
             color: #FDEEED;
             width: 40%;
+            padding: 1rem;
+            border-radius: 0.5rem;
             font-family: $bodyFont;
             font-weight: bold;
             margin: 0 auto;
@@ -50,6 +52,7 @@ form {
             background-color: black;
             text-transform: uppercase;
             transition: .5s ease;
+            cursor: pointer;
             &:hover,
             &:focus {
                 box-shadow: 0 1px 1px rgba(0,0,0,0.11), 

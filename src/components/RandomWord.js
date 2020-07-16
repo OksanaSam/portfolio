@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import Translate from 'translate-components';
 
 function RandomWord(){
 
-    const funFacts = ['Korean Movies', 'Iced Coconut Lattes', 'White Colour', 'Petting Cats', 'Virtual Traveling', 'Balcony Parties', 'Pilates', `You Don't Know JS`];
-
     const [ randomFact, setrandomFact ] = useState();
-
-    const randomizer = () => {
-        const randomKeyword = funFacts[Math.floor(Math.random() * funFacts.length)];
-        setrandomFact(randomKeyword);
-        // console.log(randomKeyword);
-    };
-
+    
     useEffect(() => {  
+        const funFacts = ['Korean Movies', 'Iced Coconut Lattes', 'Learning New Things', 'Audio Books', 'Baking Matcha Cookies', 'Growing Flowers', 'Petting Cats', 'Virtual Traveling', 'Balcony Parties', 'Pilates', `You Don't Know JS`];
+        
+        const randomizer = () => {
+            const randomKeyword = funFacts[Math.floor(Math.random() * funFacts.length)];
+            setrandomFact(randomKeyword);
+            // console.log(randomKeyword);
+        };
+
         setInterval(randomizer, 2000);
     }, []);
 
     return (
         <>
-            <p className='randomFact'>Currently into: <span>{randomFact}</span></p>
+            <p className='randomFact'><Translate useRawText={true}>Currently into: </Translate><span>{randomFact}</span></p>
         </>
     )}
 

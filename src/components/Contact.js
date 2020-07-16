@@ -1,16 +1,20 @@
 import React from 'react';
 
+// * * * * TRANSLATIONS FEATURE
+import Translate from 'translate-components';
+
 function Contact() {
     return (
         <>
+        {/* CONTACT */}
             <section id='contact' className='contactSection'>
                 <div className='wrapper'>
                     <div className='formSection'>
-                        <h2>let's get in touch</h2>
-                            <p>To connect, you can always email me at sayhi@oksanadev.com.</p>
-                            <p>Or, if you prefer it the old-fashioned way, fill out the form!</p>
+                        <h2><Translate useRawText={true}>let's get in touch</Translate></h2>
+                            <p><Translate useRawText={true}>To connect, you can always email me at oksana@oksanadev.com.</Translate></p>
+                            <p><Translate useRawText={true}>Or, if you prefer it the old-fashioned way, fill out the form!</Translate></p>
                         <form action='https://getform.io/f/27e13fbd-6704-422a-a101-c0e11e96aab1' method='POST' >
-                            <label htmlFor='name'>name *</label>
+                            <label htmlFor='name'><Translate useRawText={true}>name *</Translate></label>
                             <input
                                 type='text'
                                 id='name'
@@ -21,7 +25,7 @@ function Contact() {
                                 // onChange={this.handleInputChange}
                                 required
                             />
-                            <label htmlFor='email'>email *</label>
+                            <label htmlFor='email'><Translate useRawText={true}>email *</Translate></label>
                             <input
                                 type='email'
                                 id='email'
@@ -40,7 +44,7 @@ function Contact() {
                                 placeholder='message'
                                 required
                             ></textarea>
-                            <input type='submit' id='submit' name='submit' value='Submit'/>
+                            <button type='submit' id='submit' name='submit'><Translate useRawText={true}>Submit</Translate></button>
                         </form>
                     </div>
                 </div>

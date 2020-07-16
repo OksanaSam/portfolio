@@ -1,14 +1,20 @@
 footer {
     @include flex(column nowrap, center, center);
     background: #FDEEED;
-    padding: 1rem 0;
-    height: 12vh;
+    padding: 1.5rem 0;
+    // height: 12vh;
+    min-height: fit-content;
     text-align: center;	
     color: $textColor;
     text-transform: uppercase;
     font-size: 1.4rem;
         .footerFlex {
             @include flex(row nowrap, space-between, center);
+            padding: 1rem 0;
+            
+        }
+        .copyright {
+            font-size: 1.8rem;
             padding-bottom: 1rem;
         }
 }
@@ -31,7 +37,7 @@ footer {
     &:hover,
     &:focus {
         color: #636363;
-        filter: drop-shadow(1.6rem 1.6rem 2rem gray);
+        filter: drop-shadow(0.5rem 0.5rem 1rem gray);
     }
 }
 

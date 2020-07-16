@@ -23,7 +23,8 @@
     "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
-    "sweetalert2": "^9.15.2"
+    "sweetalert2": "^9.15.2",
+    "translate-components": "^1.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

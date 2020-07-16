@@ -1,20 +1,28 @@
 import React from 'react';
 import "../App.scss";
+import sketch from '../sketch.png';
+
+// * * * * Font Awesome Icons
 import Icon from './Icon.jsx';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
+// * * * * Smooth Scroll Library
 import { animateScroll as scroll } from 'react-scroll';
-import sketch from '../sketch.png';
+
+// * * * * TRANSLATIONS FEATURE
+import Translate from 'translate-components';
 
 function Hero(){
     return (
         <>
-            <section className='hero'>
+        {/* HEADER */}
+            <header className='hero'>
                 <div className='wrapper'>
                     <div className='heroContent'>
                     <div className='heroText'>
                         <div className='text'>
-                        <h1>hi, i'm oksana</h1> 
-                        <p>(n) a front-end developer</p>
+                        <h1><Translate>hi, i'm oksana</Translate></h1> 
+                        <p><Translate>(n) a front-end developer</Translate></p>
                         </div>
                         <img className='sketch' src={sketch} alt='sketch'/>
                     </div>
@@ -22,7 +30,7 @@ function Hero(){
                         ><Icon iconName={faChevronDown} /></span>
                     </div>
                 </div>
-            </section>
+            </header>
         </>
     )}
 
