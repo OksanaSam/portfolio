@@ -40,7 +40,7 @@ function Footer() {
                     </ul>
                 </div>
                 <p className='copyright'>© 2020 oksanadev.com <span><Icon iconName={faReact} /></span></p>
-                <p className='attribution'> <a href='https://www.instagram.com/alyona_demeneva/'><Icon iconName={faInstagram} /> <Translate useRawText={true}>Sketch by Alyona Demeneva</Translate></a></p>
+                <p className='attribution'> <a href='https://www.instagram.com/alyona_demeneva/' target='_blank' rel='noopener noreferrer'><Icon iconName={faInstagram} /> <Translate useRawText={true}>Sketch by Alyona Demeneva</Translate></a></p>
             </div>
         </footer>
     );

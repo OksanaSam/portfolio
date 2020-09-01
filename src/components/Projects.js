@@ -47,8 +47,8 @@ function Projects(){
                                 <h3>Moody</h3>
                                 <p><Translate useRawText={true}>A custom moodboard web application tailored to user preferences. Built on React using 2 APIs. The user can switch between color and audio themes with a toggle switch.</Translate></p>
                                 <p className='toolKit'>React | Unsplash API | Type Fit API | react-sound | Accessible</p>
-                                <a className='projectLink' href='https://oksanasam.github.io/oksana-samokhvalova-project-five/' target='_blank' rel='noopener noreferrer'>Live</a>
-                               <a className='projectLink' href='https://github.com/OksanaSam/oksana-samokhvalova-project-five' target='_blank' rel='noopener noreferrer' >GitHub</a>
+                                <a className='projectLink' href='https://oksanasam.github.io/moody/' target='_blank' rel='noopener noreferrer'>Live</a>
+                               <a className='projectLink' href='https://github.com/OksanaSam/moody' target='_blank' rel='noopener noreferrer' >GitHub</a>
                         </div>
                     </div>
                 </div>
