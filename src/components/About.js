@@ -1,6 +1,8 @@
 import React from 'react';
 import RandomWord from './RandomWord';
-import myPhoto from '../me.jpg';
+import myPhoto from '../hello.jpg';
+import mySecondPhoto from '../IMG_20200718_184321.jpg';
+
 
 // * * * * Font Awesome Icons
 import Icon from './Icon.jsx';
@@ -18,7 +20,7 @@ function About(){
         {/* ABOUT */}
            <section id='about' className='aboutMe'>
                 <div className='myPhoto'>
-                    {/* <img src={myPhoto} alt='my photo'/> */}
+                    <img src={mySecondPhoto} alt='my photo'/>
                 </div>
                 <div className='aboutMeText'>
                     <h2><Translate useRawText={true}>about</Translate></h2>

@@ -6,12 +6,11 @@ function RandomWord(){
     const [ randomFact, setrandomFact ] = useState();
     
     useEffect(() => {  
-        const funFacts = ['Korean Movies', 'Iced Coconut Lattes', 'Learning New Things', 'Audio Books', 'Baking Matcha Cookies', 'Growing Flowers', 'Petting Cats', 'Virtual Traveling', 'Balcony Parties', 'Pilates', `You Don't Know JS`];
+        const funFacts = ['Korean Movies', 'Iced Coconut Lattes', 'Learning New Things', 'Audio Books', 'Baking Matcha Cookies', 'Growing Flowers', 'Petting Cats', 'Virtual Traveling', 'Balcony Parties', 'Pilates', 'Gatsby', `You Don't Know JS`];
         
         const randomizer = () => {
             const randomKeyword = funFacts[Math.floor(Math.random() * funFacts.length)];
             setrandomFact(randomKeyword);
-            // console.log(randomKeyword);
         };
 
         setInterval(randomizer, 2000);

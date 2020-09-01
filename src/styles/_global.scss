@@ -59,13 +59,7 @@ h2 {
 button {
   text-transform: uppercase;
   border: none;
-  background-color: #FDEEED;
   border-radius: 0.2rem;
   font-family: $headingFont;
   transition: .5s ease;
-          
-    &:hover,
-    &:focus {
-        background-color: white;
-    }
 }

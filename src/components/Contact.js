@@ -11,7 +11,7 @@ function Contact() {
                 <div className='wrapper'>
                     <div className='formSection'>
                         <h2><Translate useRawText={true}>let's get in touch</Translate></h2>
-                            <p><Translate useRawText={true}>To connect, you can always email me at oksana@oksanadev.com.</Translate></p>
+                            <p><Translate useRawText={true}>To connect, you can always email me at oksana.s.dev@gmail.com.</Translate></p>
                             <p><Translate useRawText={true}>Or, if you prefer it the old-fashioned way, fill out the form!</Translate></p>
                         <form action='https://getform.io/f/27e13fbd-6704-422a-a101-c0e11e96aab1' method='POST' >
                             <label htmlFor='name'><Translate useRawText={true}>name *</Translate></label>

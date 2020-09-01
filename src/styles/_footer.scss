@@ -1,6 +1,6 @@
 footer {
     @include flex(column nowrap, center, center);
-    background: #FDEEED;
+    background: $primary;
     padding: 1.5rem 0;
     // height: 12vh;
     min-height: fit-content;
@@ -37,7 +37,7 @@ footer {
     &:hover,
     &:focus {
         color: #636363;
-        filter: drop-shadow(0.5rem 0.5rem 1rem gray);
+        // filter: drop-shadow(0.5rem 0.5rem 1rem gray);
     }
 }
 

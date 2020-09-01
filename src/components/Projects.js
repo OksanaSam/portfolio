@@ -59,7 +59,7 @@ function Projects(){
                         </div>
                         <div className='projectDescription'>
                             <h3>AirClear Canada</h3>
-                            <p><Translate useRawText={true}>A pair project built in partnership with </Translate><a href='https://thisdude.codes/#' target='_blank' rel='noopener noreferrer' >Michael Currie</a>: <Translate useRawText={true}>an interactive web app that allows a user to check the air quality in Canadian provinces and view the real time air quality and weather data.</Translate></p>
+                            <p><Translate useRawText={true}>A pair project built in collaboration with </Translate><a href='https://thisdude.codes/#' target='_blank' rel='noopener noreferrer' >Michael Currie</a>: <Translate useRawText={true}>an interactive web app that allows a user to check the air quality in Canadian provinces and view the real time air quality and weather data.</Translate></p>
                             <p className='toolKit'>jQuery | MapQuest API | AirVisual API | LeafletJS | GeoJSON | Unsplash API</p>
                             <a className='projectLink' href='https://airclear.netlify.app/' target='_blank' rel='noopener noreferrer' >Live</a>
                             <a className='projectLink' href='https://github.com/OksanaAndMikeCode/AirQualityApp' target='_blank' rel='noopener noreferrer'>GitHub</a>
@@ -73,10 +73,10 @@ function Projects(){
                         </div>
                         <div className='projectDescription'>
                             <h3>Page Turners</h3>
-                            <p><Translate useRawText={true}>A group project built in partnership with </Translate><a href='http://davidjdownie.ca/' target='_blank' rel='noopener noreferrer'>David Downie</a>, <a href='https://www.vigyankayastha.com/' target='_blank' rel='noopener noreferrer' >Vigyan Kayastha</a> <Translate useRawText={true}>and</Translate> <a href='https://www.anastasiamay.com/' target='_blank' rel='noopener noreferrer' >Anastasia May</a>: <Translate useRawText={true}>an app that allows a user to track their reading lists. The user can search books by title and author, add them to their virtual bookshelf, delete books and mark them as read/unread.</Translate></p>
+                            <p><Translate useRawText={true}>A group project built in collaboration with </Translate><a href='http://davidjdownie.ca/' target='_blank' rel='noopener noreferrer'>David Downie</a>, <a href='https://www.vigyankayastha.com/' target='_blank' rel='noopener noreferrer' >Vigyan Kayastha</a> <Translate useRawText={true}>and</Translate> <a href='https://www.anastasiamay.com/' target='_blank' rel='noopener noreferrer' >Anastasia May</a>: <Translate useRawText={true}>an app that allows a user to track their reading lists. The user can search books by title and author, add them to their virtual bookshelf, delete books and mark them as read/unread.</Translate></p>
                             <p className='toolKit'>React | Google Books API | Firebase | Sass | Accessible</p>
-                            <a className='projectLink' href='https://dankestteamever.github.io/page-turners/' target='_blank' rel='noopener noreferrer'>Live</a>
-                            <a className='projectLink' href='https://github.com/DankestTeamEver/page-turners' target='_blank' rel='noopener noreferrer' >GitHub</a>
+                            <a className='projectLink' href='https://thepageturners.github.io/page-turners/' target='_blank' rel='noopener noreferrer'>Live</a>
+                            <a className='projectLink' href='https://github.com/ThePageTurners/page-turners' target='_blank' rel='noopener noreferrer' >GitHub</a>
                         </div>
                     </div>
                 </div>

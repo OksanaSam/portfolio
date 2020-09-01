@@ -73,6 +73,7 @@ function App() {
                 <li>
                     <span className='languageButton' onClick={reactTranslateChangeLanguage.bind(this, 'ua')}>UA</span>
                     <span className='languageButton' onClick={reactTranslateChangeLanguage.bind(this, 'en')}>EN</span>
+                    <span className='languageButton' onClick={reactTranslateChangeLanguage.bind(this, 'fr')}>FR</span>
                 </li>
               </ul>
           </div>

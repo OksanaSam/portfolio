@@ -1,7 +1,7 @@
 // Hero Section Styles
 
 .hero {    
-    background: linear-gradient(-190deg, #FDEEED 90%, white 10%);
+    background: linear-gradient(-190deg, $primary 90%, $secondary 10%);
         .heroContent {
             padding-top: calc(5vh + 2rem);
             height: 100vh;
