@@ -35,7 +35,6 @@ function Projects(){
 
     return (
         <>
-        {/* PROJECTS */}
             <section className='projects' id='projects'>
                 <h2><Translate useRawText={true}>projects</Translate></h2>
                 <div className='project moody' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='100'>

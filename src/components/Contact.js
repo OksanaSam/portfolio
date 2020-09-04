@@ -1,12 +1,10 @@
 import React from 'react';
-
 // * * * * TRANSLATIONS FEATURE
 import Translate from 'translate-components';
 
 function Contact() {
     return (
         <>
-        {/* CONTACT */}
             <section id='contact' className='contactSection'>
                 <div className='wrapper'>
                     <div className='formSection'>
@@ -19,10 +17,6 @@ function Contact() {
                                 type='text'
                                 id='name'
                                 name='name'
-                                // placeholder='your name'
-                                // value=''
-                                // value={this.state.values.name}
-                                // onChange={this.handleInputChange}
                                 required
                             />
                             <label htmlFor='email'><Translate useRawText={true}>email *</Translate></label>
@@ -30,10 +24,6 @@ function Contact() {
                                 type='email'
                                 id='email'
                                 name='email'
-                                // placeholder='email'
-                                // value=''
-                                // value={this.state.values.email}
-                                // onChange={this.handleInputChange}
                                 required
                             />
                             <textarea

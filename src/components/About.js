@@ -1,23 +1,16 @@
 import React from 'react';
 import RandomWord from './RandomWord';
-import myPhoto from '../hello.jpg';
 import mySecondPhoto from '../IMG_20200718_184321.jpg';
-
-
 // * * * * Font Awesome Icons
 import Icon from './Icon.jsx';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
 // * * * * TRANSLATIONS FEATURE
 import Translate from 'translate-components';
 
 function About(){
     return (
         <>
-        {/* ABOUT */}
            <section id='about' className='aboutMe'>
                 <div className='myPhoto'>
                     <img src={mySecondPhoto} alt='my photo'/>
@@ -28,7 +21,6 @@ function About(){
                     <p><Translate useRawText={true}>As a recent graduate of Juno College of Technology (Web Development Immersive Bootcamp), I like building user-friendly web applications with simple UI and keeping up with the latest trends in Web Development.</Translate></p>
                     <p><Translate useRawText={true}>My background is in Linguistics and Graphic Design. So, I can talk for hours about syntax and semantics, of both programming and natural languages.</Translate></p>
                     <p><Translate useRawText={true}>Kinda hooked on React.</Translate></p>
-                    {/* <p><Translate useRawText={true}>As a translator in my past career, I also made a Ukrainian version of this website (so that my mom can check out my portfolio</Translate>&#9829;).</p> */}
                     <RandomWord />
                     <p><Translate useRawText={true}>Please feel free to reach out via social channels below.</Translate></p>
                     <ul className='socialIcons'>

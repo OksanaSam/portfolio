@@ -54,7 +54,6 @@ function App() {
   return (
       <>
        <TranslateProvider translations={translations} defaultLanguage={'en'}>
-         {/* NAV BAR */}
         <nav>
           <div className={`slidingNav ${open}`}>
           <ul className='testUl'>
