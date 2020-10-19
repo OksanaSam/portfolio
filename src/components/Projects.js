@@ -181,13 +181,14 @@ function Projects() {
               <h3>AirClear Canada</h3>
               <p>
                 <Translate useRawText={true}>
-                  A pair project built in collaboration with{" "}
+                  A pair project built in collaboration with
                 </Translate>
                 <a
                   href="https://thisdude.codes/#"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  {" "}
                   Michael Currie
                 </a>
                 :{" "}
@@ -232,13 +233,14 @@ function Projects() {
               <h3>Page Turners</h3>
               <p>
                 <Translate useRawText={true}>
-                  A group project built in collaboration with{" "}
+                  A group project built in collaboration with
                 </Translate>
                 <a
                   href="http://davidjdownie.ca/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  {" "}
                   David Downie
                 </a>
                 ,{" "}
@@ -247,14 +249,15 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Vigyan Kayastha
-                </a>{" "}
-                <Translate useRawText={true}>and</Translate>{" "}
+                  Vigyan Kayastha{" "}
+                </a>
+                <Translate useRawText={true}>and</Translate>
                 <a
                   href="https://www.anastasiamay.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  {" "}
                   Anastasia May
                 </a>
                 :{" "}

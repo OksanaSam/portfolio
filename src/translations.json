@@ -35,8 +35,8 @@
     "ua": "На разі захоплююсь: ",
     "fr": "Pour le moment j'aime: "
   },
-  "A pair project built in collaboration with ": {
-    "ua": "Парний проект, реалізований у партнерстві з ",
+  "A pair project built in collaboration with": {
+    "ua": "Парний проект, реалізований у партнерстві з",
     "fr": "Un projet a deux en collaboration avec"
   },
   "an interactive web app that allows a user to check the air quality in Canadian provinces and view the real time air quality and weather data.": {
@@ -47,8 +47,8 @@
     "ua": "Веб-додаток у вигляді персоналізованого мудборду, який користувач може оформити під власний настрій. Розроблено на React за допомогою 2 API. Користувач може змінювати колір та звукову тему додатку за допомогою перемикача.",
     "fr": "Une application Web utilisée comme un moodboard personnalisé adapté aux préférences de l'utilisateur. Développée sur React en utilisant 2 API. L'utilisateur peut basculer entre les thèmes de couleur et audio avec un interrupteur à bascule."
   },
-  "A group project built in collaboration with ": {
-    "ua": "Груповий проект, реалізований у партнерстві з ",
+  "A group project built in collaboration with": {
+    "ua": "Груповий проект, реалізований у партнерстві з",
     "fr": "Un projet de groupe en collaboration avec"
   },
   "an app that allows a user to track their reading lists. The user can search books by title and author, add them to their virtual bookshelf, delete books and mark them as read/unread.": {
