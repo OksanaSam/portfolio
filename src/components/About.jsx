@@ -17,7 +17,7 @@ function About() {
     <>
       <section id="about" className="aboutMe">
         <div className="myPhoto">
-          <img src={mySecondPhoto} alt="Oksana's photo" />
+          <img src={mySecondPhoto} alt="Oksana" />
         </div>
         <div className="aboutMeText">
           <h2>
