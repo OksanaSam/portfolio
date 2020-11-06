@@ -1,3 +1,8 @@
+Portfolio website built in React (with Hooks). Localized in 3 languages (English, French and Ukrainian). Check out the nav bar to switch the language.
+<a href="https://oksanadev.com/">Live here<a>
+
+
+
 ![profile](https://github.com/OksanaSam/portfolio/blob/master/Portfolio.png)
 
 www.oksanadev.com/
