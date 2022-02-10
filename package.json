@@ -15,7 +15,7 @@
     "axios": "^0.19.2",
     "google-maps-react": "^2.0.6",
     "hash-router": "^0.4.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.13.1",
